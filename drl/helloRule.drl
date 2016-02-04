@@ -1,0 +1,8 @@
+package com.znsx.drl.user;
+
+rule "helloRule"
+when
+  $user: User(age>20);
+then
+  $user.setName($user.getName() + "(20+)");
+end
